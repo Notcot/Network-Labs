@@ -23,6 +23,6 @@ Configure static routes so PC1 can communicate with PC2 through two routers (R1,
 ```cisco
 ip route 10.3.3.0 255.255.255.0 10.2.2.2
 
-**R2:**
+R2:
 ```cisco
 ip route 10.1.1.0 255.255.255.0 10.2.2.1
