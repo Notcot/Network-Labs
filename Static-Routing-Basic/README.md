@@ -27,3 +27,54 @@ R2:
 ```cisco
 ip route 10.1.1.0 255.255.255.0 10.2.2.1
 ```
+
+# Learning Outcomes
+Fundamental concepts and terminologies for router configurations and netwoorking.
+As well as basic git CLI.
+
+## Router Config
+2911 routers are used because of them being the standard models recommended in Cisco Network Academy.
+
+**CLI**
+Enable configurations:
+```
+enable
+```
+
+Configure router:
+```
+configure terminal
+```
+
+Set router host name:
+```
+hostname "name"
+```
+
+Set FastEthernet or GigabitEthernet port ip addresses:
+```
+interface Gi0/0
+
+interface Fa0/0
+```
+
+Set addresses for ports; ip and subnet mask:
+```
+ip address x.x.x.x 255.x.x.x
+```
+
+Enable port:
+```
+no shutdown
+```
+
+Show current configurations:
+```
+show ip interface brief
+```
+
+## Networking Concepts
+
+- Routers have multiple id addresses with each port having their own.
+- Having different subnet ranges for different sets of connections is preferrable.
+- Be ware of which ip belongs to which router port while managing static routes.
