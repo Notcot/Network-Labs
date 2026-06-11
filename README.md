@@ -1,10 +1,10 @@
 # Networking Labs
 
-A collection of Packet Tracer labs and networking configurations for CCNA / Network+ / Cybersecurity studies.
+A collection of Packet Tracer labs and networking configurations for CCNA / Cybersecurity studies.
 
 ## 📚 Repository Overview
 
-This repository contains hands-on networking labs that I completed while studying for **CompTIA Network+** and preparing for the **Advanced Diploma in Cybersecurity**.
+This repository contains hands-on networking labs that I completed while studying for **CCNA** and preparing for the **Advanced Diploma in Cybersecurity**.
 
 ### Purpose
 - Document my networking journey
@@ -22,6 +22,8 @@ This repository contains hands-on networking labs that I completed while studyin
 | VLANs & Inter-VLAN Routing | Switching, Trunking, Router-on-a-Stick | Planned |
 | ACLs                       | Traffic Filtering                  | Planned |
 | NAT                        | Network Address Translation        | Planned |
+
+(I am also studying Jeremy's IT Lab CCNA course and labs from this material is in the "Jeremy-Labs" folder)
 
 ## 🛠️ Tools Used
 - Cisco Packet Tracer
