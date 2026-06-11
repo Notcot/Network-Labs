@@ -13,15 +13,18 @@ This repository contains hands-on networking labs that I completed while studyin
 
 ## 🗂️ Labs Included
 
-| Lab Name                    | Topics Covered                     | Status    |
-|----------------------------|------------------------------------|---------|
-| Static Routing Basic       | Static Routes, IP Addressing       | Completed |
-| Static Routing Advanced    | -                                  | Planned |
-| RIP Routing                | Dynamic Routing                    | Planned |
-| OSPF Single Area           | Link State Routing                 | Planned |
-| VLANs & Inter-VLAN Routing | Switching, Trunking, Router-on-a-Stick | Planned |
-| ACLs                       | Traffic Filtering                  | Planned |
-| NAT                        | Network Address Translation        | Planned |
+| Lab Name                          | Topics Covered                              | Status      |
+|-----------------------------------|---------------------------------------------|-------------|
+| Static Routing Basic              | Static Routes, IP Addressing, Verification  | Completed   |
+| RIP Routing                       | Dynamic Routing (Distance Vector)           | In Progress |
+| OSPF Single Area                  | Link-State Routing, OSPF Configuration      | Planned     |
+| OSPF Multi-Area                   | Advanced OSPF                               | Planned     |
+| VLANs & Trunking                  | VLANs, Trunking, VTP                        | Planned     |
+| Inter-VLAN Routing                | Router-on-a-Stick, Layer 3 Switching        | Planned     |
+| EtherChannel                      | Link Aggregation (LACP & PAgP)              | Planned     |
+| ACLs (Standard & Extended)        | Traffic Filtering & Control                 | Planned     |
+| NAT (Static & PAT)                | Network Address Translation                 | Planned     |
+| DHCP & NTP                        | Server Configuration                        | Planned     |
 
 (I am also studying Jeremy's IT Lab CCNA course and labs from this material is in the "Jeremy-Labs" folder)
 
