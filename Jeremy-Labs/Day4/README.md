@@ -2,7 +2,7 @@
 
 Introduction to Cisco CLI with basic usage of password and secret.
 
-## Command introduced
+## Learning Outcome
 
 'tab' auto completes words in console if theres only possible word, e.g. "en" + 'tab' = "enable" during the user directory.
 "?" allows enquiries of available commands
