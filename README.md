@@ -1,10 +1,10 @@
 # Networking Labs
 
-A collection of Packet Tracer labs and networking configurations for CCNA / Cybersecurity studies.
+A collection of Packet Tracer labs and study notes for CCNA and networking in general.
 
 ## 📚 Repository Overview
 
-This repository contains hands-on networking labs that I completed while studying for **CCNA** and preparing for the **Advanced Diploma in Cybersecurity**.
+This repository contains hands-on networking labs that I completed while studying for **CCNA**.
 
 ### Purpose
 - Document my networking journey
