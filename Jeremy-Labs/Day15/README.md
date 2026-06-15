@@ -1,5 +1,5 @@
 #VLSM
-![topology](topology.ong)
+![topology](topology.png)
 
 Given network address = 192.168.5.0/24
 Sequence being Large > Medium > Small. So starting with LAN2, 64 hosts.
