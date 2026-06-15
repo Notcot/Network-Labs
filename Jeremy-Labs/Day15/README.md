@@ -1,4 +1,4 @@
-#VLSM
+# VLSM
 ![topology](topology.png)
 
 Given network address = 192.168.5.0/24
@@ -64,6 +64,6 @@ first: 192.168.5.225
 last: 192.168.5.226
 usable: 2
 
-#Learning Outcome
+# Learning Outcome
  - End hosts nested within the same router don't need to do static routes. They do ARP automatically.
  - Beware not to configure duplicate next-hop as each router can deliver packets for the subents with the same next-hop address.
