@@ -16,6 +16,7 @@ This repository contains hands-on networking labs that I completed while studyin
 | Lab Name                          | Topics Covered                              | Status      |
 |-----------------------------------|---------------------------------------------|-------------|
 | Static Routing Basic              | Static Routes, IP Addressing, Verification  | Completed   |
+| VLSM Static Routing               | Static Routes, IP Addressing, Verification  | Completed   |
 | RIP Routing                       | Dynamic Routing (Distance Vector)           | In Progress |
 | OSPF Single Area                  | Link-State Routing, OSPF Configuration      | Planned     |
 | OSPF Multi-Area                   | Advanced OSPF                               | Planned     |
