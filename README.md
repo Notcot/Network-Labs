@@ -17,11 +17,10 @@ This repository contains hands-on networking labs that I completed while studyin
 |-----------------------------------|---------------------------------------------|-------------|
 | Static Routing Basic              | Static Routes, IP Addressing, Verification  | Completed   |
 | VLSM Static Routing               | Static Routes, IP Addressing, Verification  | Completed   |
-| RIP Routing                       | Dynamic Routing (Distance Vector)           | In Progress |
+| VLANs & Trunking                  | VLANs, Trunking, VTP                        | Completed   |
+| Inter-VLAN Routing                | Router-on-a-Stick, Layer 3 Switching        | In Progress |
 | OSPF Single Area                  | Link-State Routing, OSPF Configuration      | Planned     |
 | OSPF Multi-Area                   | Advanced OSPF                               | Planned     |
-| VLANs & Trunking                  | VLANs, Trunking, VTP                        | Planned     |
-| Inter-VLAN Routing                | Router-on-a-Stick, Layer 3 Switching        | Planned     |
 | EtherChannel                      | Link Aggregation (LACP & PAgP)              | Planned     |
 | ACLs (Standard & Extended)        | Traffic Filtering & Control                 | Planned     |
 | NAT (Static & PAT)                | Network Address Translation                 | Planned     |

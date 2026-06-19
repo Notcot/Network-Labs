@@ -1,0 +1,33 @@
+Switch2>en
+Switch2#conf t
+Switch2(config)#host SW2
+Switch2(config)#
+SW2(config)#int range f0/1-2
+SW2(config-if-range)#sw mo ac
+SW2(config-if-range)#sw ac vlan 10
+SW2(config-if-range)#
+SW2(config-if-range)#int range f0/3-7
+SW2(config-if-range)#sw mo ac
+SW2(config-if-range)#sw ac vlan 30
+SW2(config-if-range)#
+SW2(config-if-range)#int g0/1
+SW2(config-if)#sw mo trunk
+SW2(config-if)#sw trunk native vlan 1111
+SW2(config-if)#sw trunk allowed 10,20,30
+SW2(config-if)#
+SW2(config-if)#vlan 20
+SW2(config-if)#
+SW2(config-if)#int g0/2
+SW2(config-if)#sw mo trunk
+SW2(config-if)#sw trunk native vlan 1111
+SW2(config-if)#sw trunk allowed 10,20,30
+SW2(config-if)#
+SW2(config-if)#vlan 10
+SW2(config-vlan)#name MANAGEMENT
+SW2(config-vlan)#
+SW2(config-vlan)#vlan 20
+SW2(config-vlan)#name SALES
+SW2(config-vlan)#
+SW2(config-vlan)#vlan 30
+SW2(config-vlan)#name IT/ENGINEERING
+SW2(config-vlan)#do wr

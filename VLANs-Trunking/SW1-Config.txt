@@ -1,0 +1,26 @@
+Switch1>en
+Switch1#conf t
+Switch1(config)#host SW1
+Switch1(config)#
+SW1(config)#int range f0/1-2
+SW1(config-if-range)#sw mo ac
+SW1(config-if-range)#sw ac vlan 10
+SW1(config-if-range)#
+SW1(config-if-range)#int range f0/3-8
+SW1(config-if-range)#sw mo ac
+SW1(config-if-range)#sw ac vlan 20
+SW1(config-if-range)#
+SW1(config-if-range)#int g0/1
+SW1(config-if)#sw mo trunk
+SW1(config-if)#sw trunk native vlan 1111
+SW1(config-if)#sw trunk allowed 10,20
+SW1(config-if)#
+SW1(config-if)#vlan 10
+SW1(config-vlan)#name MANAGEMENT
+SW1(config-vlan)#
+SW1(config-vlan)#vlan 20
+SW1(config-vlan)#name SALES
+SW1(config-vlan)#
+SW1(config-vlan)#vlan 30
+SW1(config-vlan)#name IT/ENGINEERING
+SW1(config-vlan)#do wr
