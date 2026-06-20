@@ -1,0 +1,25 @@
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#host SW3
+SW3(config)#int range f0/3-5
+SW3(config-if-range)#sw mo ac
+SW3(config-if-range)#sw ac vlan 30
+SW3(config-if-range)#
+SW3(config-if-range)#int range f0/1-2
+SW3(config-if-range)#sw mo ac
+SW3(config-if-range)#sw ac vlan 10
+SW3(config-if-range)#
+SW3(config-if-range)#int g0/1
+SW3(config-if)#sw mo trunk
+SW3(config-if)#sw trunk allowed vlan 10,30
+SW3(config-if)#sw trunk native vlan 99
+SW3(config-if)#ex
+SW3(config)#
+SW3(config)#vlan 10
+SW3(config-vlan)#name MANAGEMENT
+SW3(config-vlan)#
+SW3(config-vlan)#vlan 30
+SW3(config-vlan)#name FINANCE
+SW3(config-vlan)#
+SW3(config-vlan)#do wr

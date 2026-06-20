@@ -9,7 +9,7 @@ Design a network based on a single network block: 172.16.10.0/24
 |    20   |   Sales        |    80 hosts     |
 |    30   | IT/Engineering |    30 hosts     |
 
-Utilising VLANS, Trunking and ROAS settings.\n
+Utilising VLANS, Trunking and ROAS settings.
 PCs should be able to communicate with each other across VLANS.
 
 ## Topology

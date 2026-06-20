@@ -4,7 +4,7 @@ A collection of Packet Tracer labs and study notes for CCNA and networking in ge
 
 ## 📚 Repository Overview
 
-This repository contains hands-on networking labs that I completed while studying for **CCNA**.
+This repository contains hands-on networking labs of mine for studying **CCNA**.
 
 ### Purpose
 - Document my networking journey
@@ -17,9 +17,9 @@ This repository contains hands-on networking labs that I completed while studyin
 |-----------------------------------|---------------------------------------------|-------------|
 | Static Routing Basic              | Static Routes, IP Addressing, Verification  | Completed   |
 | VLSM Static Routing               | Static Routes, IP Addressing, Verification  | Completed   |
-| VLANs & Trunking                  | VLANs, Trunking, VTP                        | Completed   |
-| Inter-VLAN Routing                | Router-on-a-Stick, Layer 3 Switching        | In Progress |
-| OSPF Single Area                  | Link-State Routing, OSPF Configuration      | Planned     |
+| VLANs & Trunking                  | VLANs, Trunking, Router-on-a-Stick          | Completed   |
+| Inter-VLAN Routing                | Layer 3 Switching                           | Completed   |
+| OSPF Single Area                  | Link-State Routing, OSPF Configuration      | In Progress |
 | OSPF Multi-Area                   | Advanced OSPF                               | Planned     |
 | EtherChannel                      | Link Aggregation (LACP & PAgP)              | Planned     |
 | ACLs (Standard & Extended)        | Traffic Filtering & Control                 | Planned     |

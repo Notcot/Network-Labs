@@ -1,0 +1,57 @@
+Switch>en
+Switch#conf t
+Switch(config)#host SW1
+SW1(config)#
+SW1(config)#int g1/0/3
+SW1(config-if)#sw mo trunk
+SW1(config-if)#sw trunk native vlan 99
+SW1(config-if)#
+SW1(config-if)#int g1/0/2
+SW1(config-if)#sw mo trunk
+SW1(config-if)#sw trunk native vlan 99
+SW1(config-if)#sw trunk allowed vlan 10,30
+SW1(config-if)#
+SW1(config-if)#int vlan 10
+SW1(config-if)#ip addr 172.16.100.254 255.255.255.128
+SW1(config-if)#
+SW1(config-if)#int vlan 30
+SW1(config-if)#ip addr 172.16.101.62 255.255.255.192
+SW1(config-if)#
+SW1(config-if)#int vlan 20
+SW1(config-if)#ip addr 172.16.100.126 255.255.255.128
+SW1(config-if)#
+SW1(config-if)#int g1/0/2
+SW1(config-if)#sw trunk allowed vlan 10,20,30
+SW1(config-if)#int g1/0/3
+SW1(config-if)#sw trunk allowed vlan 10,20,30
+SW1(config-if)#int vlan 10
+SW1(config-if)#no shut
+SW1(config-if)#
+SW1(config-if)#int vlan 20
+SW1(config-if)#no shut
+SW1(config-if)#
+SW1(config-if)#int vlan 30
+SW1(config-if)#no shut
+SW1(config-if)#
+SW1(config-if)#vlan 10
+SW1(config-vlan)#name MANAGEMENT
+SW1(config-vlan)#vlan 20
+SW1(config-vlan)#name SALES
+SW1(config-vlan)#vlan 30
+SW1(config-vlan)#name FINANCE
+SW1(config-vlan)#ex
+SW1(config)#int g1/0/2
+SW1(config-if)#no shut
+SW1(config-if)#int g1/0/3
+SW1(config-if)#no shut
+SW1(config-if)#ex
+SW1(config)#
+SW1(config)#ip routing
+SW1(config)#
+SW1(config)#int g1/0/1
+SW1(config-if)#no sw
+SW1(config-if)#ip addr 172.16.101.66 255.255.255.252
+SW1(config-if)#ip route 0.0.0.0 0.0.0.0 172.16.101.65
+SW1(config)#int g1/0/1
+SW1(config-if)#no shut
+SW1(config-if)#do wr
