@@ -51,10 +51,15 @@ PCs should be able to communicate with each other across VLANS.
 - Hands-on calculation for subnetting.
 - Commands and  Configuration for L2 switches and L3 switches.
 - Comprehension of physical interfaces and virtual interfaces.
+- Beware of source and destination of packets, theres no need to allow vlans if the vlan does not involve the switch even when its existing else where in the network.
 
-!REMEMBER to enable the L3 funuctions in L3 switches by:
+!!!REMEMBER!!!:
 ```
-ip routing
+ip routing       ##### to enable the L3 funuctions in L3 switches
+no sw            ##### to change the L3 switch port to routing
+no shut          ##### L3 interfaces are disabled by default
+ip addr          ##### the interface needs an IP address when changed to a routing port
+sw trunk native vlan __id__          #### each trunking interface requires to configure the native vlan
 ```
 
 (P.S. Repitition of this practice should be carried out to solidify the whole process as it is relatively verbose.)
