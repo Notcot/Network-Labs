@@ -5,6 +5,7 @@
 Design a network based on a single network block: 172.16.100.0/ 22.
 
 | VLAN ID |   Department   | Number of Hosts |
+|---------|----------------|-----------------|
 |    10   |   Management   |    80 hosts     |
 |    20   |   Sales        |    120 hosts    |
 |    30   |   Finance      |    50 hosts     |
