@@ -1,0 +1,28 @@
+Switch>
+Switch>en
+Switch#conf t
+Switch(config)#host SW2
+SW2(config)#
+SW2(config)#
+SW2(config)#int range f0/1-5
+SW2(config-if-range)#sw mo ac
+SW2(config-if-range)#sw ac vlan 10
+SW2(config-if-range)#vlan 10
+SW2(config-vlan)#name MANAGEMENT
+SW2(config-vlan)#
+SW2(config-vlan)#
+SW2(config-vlan)#int range f0/20-22
+SW2(config-if-range)#sw mo ac
+SW2(config-if-range)#sw ac vlan 20
+SW2(config-if-range)#vlan 20
+SW2(config-vlan)#name SALES
+SW2(config-vlan)#
+SW2(config-vlan)#int range g0/1-2
+SW2(config-if-range)#channel-group 1 mode active
+SW2(config-if-range)#int port-channel 1
+SW2(config-if)#sw mo trunk
+SW2(config-if)#sw trunk allowed vlan 10,20
+SW2(config-if)#sw trunk native vlan 99
+SW2(config-if)#
+SW2(config)#do wr
+

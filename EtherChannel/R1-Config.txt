@@ -1,0 +1,12 @@
+Router>en
+Router#conf t
+Router(config)#host R1
+R1(config)#int g0/0
+R1(config-if)#no shut
+R1(config-if)#ip addr 172.16.41.193 255.255.255.252
+R1(config-if)#
+R1(config-if)#ex
+R1(config)#ip route 172.16.41.0 255.255.255.128 172.16.41.194
+R1(config)#ip route 172.16.40.0 255.255.255.0 172.16.41.194
+R1(config)#ip route 172.16.41.128 255.255.255.192 172.16.41.194
+R1(config)#do wr

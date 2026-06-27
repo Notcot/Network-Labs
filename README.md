@@ -21,7 +21,7 @@ This repository contains hands-on networking labs of mine for studying **CCNA**.
 | Inter-VLAN Routing                | Layer 3 Switching                           | Completed   |
 | OSPF Single Area                  | Link-State Routing, OSPF Configuration      | In Progress |
 | OSPF Multi-Area                   | Advanced OSPF                               | Planned     |
-| EtherChannel                      | Link Aggregation (LACP & PAgP)              | Planned     |
+| EtherChannel                      | Link Aggregation (LACP | PAgP)              | Completed   |
 | ACLs (Standard & Extended)        | Traffic Filtering & Control                 | Planned     |
 | NAT (Static & PAT)                | Network Address Translation                 | Planned     |
 | DHCP & NTP                        | Server Configuration                        | Planned     |

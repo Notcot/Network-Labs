@@ -1,0 +1,24 @@
+Switch>en
+Switch#conf t
+Switch(config)#host SW3
+SW3(config)#
+SW3(config)#int range f0/1-5
+SW3(config-if-range)#sw mo ac
+SW3(config-if-range)#sw ac vlan 30
+SW3(config-if-range)#vlan 30
+SW3(config-vlan)#name ENGINEERING
+SW3(config-vlan)#
+SW3(config-vlan)#int range f0/20-22
+SW3(config-if-range)#sw mo ac
+SW3(config-if-range)#sw ac vlan 20
+SW3(config-if-range)#vlan 20
+SW3(config-vlan)#name SALES
+SW3(config-vlan)#
+SW3(config-vlan)#int range g0/1-2
+SW3(config-if-range)#channel-group 1 mode active
+SW3(config-if-range)#int po1
+SW3(config-if)#sw mo trunk
+SW3(config-if)#sw trunk native vlan 99
+SW3(config-if)#sw trunk allowed vlan 20,30
+SW3(config-if)#
+SW3(config-if)#do wr

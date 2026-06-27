@@ -63,3 +63,8 @@ sw trunk native vlan __id__          #### each trunking interface requires to co
 ```
 
 (P.S. Repitition of this practice should be carried out to solidify the whole process as it is relatively verbose.)
+
+
+
+## Another quick practice with a slightly different network address
+![Topology](topology2.png)
