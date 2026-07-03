@@ -19,9 +19,10 @@ This repository contains hands-on networking labs of mine for studying **CCNA**.
 | VLSM Static Routing               | Static Routes, IP Addressing, Verification  | Completed   |
 | VLANs & Trunking                  | VLANs, Trunking, Router-on-a-Stick          | Completed   |
 | Inter-VLAN Routing                | Layer 3 Switching                           | Completed   |
-| OSPF Single Area                  | Link-State Routing, OSPF Configuration      | In Progress |
-| OSPF Multi-Area                   | Advanced OSPF                               | Planned     |
-| EtherChannel                      | Link Aggregation (LACP | PAgP)              | Completed   |
+| OSPF Single Area-01               | Link-State Routing, OSPF Configuration      | Completed   |
+| OSPF Single Area-02               | Link-State Routing, OSPF Configuration      | In Progress |
+| OSPF Multi-Area                   | Advanced OSPF                               | In Progress |
+| EtherChannel                      | Link Aggregation (LACP)                     | Completed   |
 | ACLs (Standard & Extended)        | Traffic Filtering & Control                 | Planned     |
 | NAT (Static & PAT)                | Network Address Translation                 | Planned     |
 | DHCP & NTP                        | Server Configuration                        | Planned     |
@@ -47,4 +48,4 @@ This repository contains hands-on networking labs of mine for studying **CCNA**.
 
 ---
 
-**Last Updated:** June 2026
+**Last Updated:** July 2026
