@@ -1,0 +1,37 @@
+Router>en
+Router#conf t
+Router(config)#
+Router(config)#host R4
+R4(config)#
+R4(config)#
+R4(config)#int l0	
+R4(config-if)#ip addr 4.4.4.4 255.255.255.255
+R4(config-if)#
+R4(config-if)#int g0/0
+R4(config-if)#ip addr 172.16.1.4 255.255.255.248
+R4(config-if)#no shut
+R4(config-if)#
+R4(config-if)#int g0/1
+R4(config-if)#ip addr 172.16.30.254 255.255.255.0
+R4(config-if)#no shut
+R4(config-if)#router ospf 1
+R4(config-router)#router-id 4.4.4.4
+R4(config-router)#
+R4(config-router)#int g0/0
+R4(config-if)#ip ospf 1 area 0
+R4(config-if)#
+R4(config-if)#int g0/1
+R4(config-if)#ip ospf 1 area 3
+R4(config-if)#
+R4(config-if)#router ospf 1
+R4(config-router)#passive-interface g0/1
+R4(config-router)#
+R4(config-router)#auto-cost reference-bandwidth 10000
+R4(config-router)#
+R4(config-router)#int g0/0
+R4(config-if)#ip ospf priority 100
+R4(config-if)#ex
+R4(config)#ex
+R4#clear ip ospf process
+Reset ALL OSPF processes? [no]: yes
+R4#copy run start
