@@ -1,0 +1,46 @@
+Router>en
+Router#conf t
+Router(config)#host R1
+R1(config)#
+R1(config)#int g0/2
+R1(config-if)#ip addr 203.0.113.1 255.255.255.252
+R1(config-if)#no shut
+R1(config-if)#int g0/0
+R1(config-if)#ip addr 172.16.10.254 255.255.255.0
+R1(config-if)#no shut
+R1(config-if)#int g0/1 
+R1(config-if)#ip addr 172.16.12.1 255.255.255.252
+R1(config-if)#no shut
+R1(config-if)#
+R1(config-if)#int l0
+R1(config-if)#ip addr 1.1.1.1 255.255.255.255
+R1(config-if)#
+R1(config-if)#router ospf 1
+R1(config-router)#router-id 1.1.1.1
+R1(config-router)#ex
+R1(config)#
+R1(config)#int g0/1
+R1(config-if)#ip ospf 1 area 0
+R1(config-if)#int g0/0
+R1(config-if)#ip ospf 1 area 1
+R1(config-if)#ex
+R1(config)#
+R1(config)#ip route 0.0.0.0 0.0.0.0 203.0.113.2
+R1(config)#router ospf 1
+R1(config-router)#default-information originate 
+R1(config-router)#ex
+R1(config)#
+R1(config)#ip access-list standard ##NO_SALES_TO_MGMT##
+R1(config-std-nacl)#deny 172.16.20.0 0.0.0.255
+R1(config-std-nacl)#permit any
+R1(config-std-nacl)#
+R1(config-std-nacl)#int g0/0
+R1(config-if)#ip access-group ##NO_SALES_TO_MGMT## out
+R1(config-if)#ex
+R1(config)#ip access-list standard ##NO_INTERNET_FOR_ENGIN##
+R1(config-std-nacl)#deny 172.16.30.0 0.0.0.255
+R1(config-std-nacl)#permit any
+R1(config-std-nacl)#
+R1(config-std-nacl)#int g0/2
+R1(config-if)#ip access-group ##NO_INTERNET_FOR_ENGIN## out
+R1(config-if)#

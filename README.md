@@ -22,11 +22,12 @@ This repository contains hands-on networking labs of mine for studying **CCNA**.
 | OSPF Single Area                  | Link-State Routing, OSPF Configuration      | Completed   |
 | OSPF Multi-Area                   | Advanced OSPF                               | Completed   |
 | EtherChannel                      | Link Aggregation (LACP)                     | Completed   |
-| ACLs (Standard & Extended)        | Traffic Filtering & Control                 | In Progress |
+| ACLs (Standard)                   | Traffic Filtering & Control                 | Completed   |
+| ACLs (Extended)                   | Traffic Filtering & Control                 | In Progress |
 | NAT (Static & PAT)                | Network Address Translation                 | Planned     |
 | DHCP & NTP                        | Server Configuration                        | Planned     |
 
-(I am studying Jeremy's IT Lab CCNA course and labs from this material is in the "Jeremy-Labs" folder)
+
 
 ## 🛠️ Tools Used
 - Cisco Packet Tracer
@@ -37,7 +38,7 @@ This repository contains hands-on networking labs of mine for studying **CCNA**.
 - Master IP addressing and subnetting
 - Understand routing concepts (static & dynamic)
 - Configure and troubleshoot networks
-- Build strong foundational knowledge for cybersecurity
+- Build strong foundational knowledge for networking
 
 ## 📌 How to Use This Repository
 1. Navigate to the lab folder you're interested in

@@ -1,0 +1,14 @@
+R1#show access-lists 
+Standard IP access list ##NO_SALES_TO_MGMT##
+    10 deny 172.16.20.0 0.0.0.255 (3 match(es))
+    20 permit any (2 match(es))
+Standard IP access list ##NO_INTERNET_FOR_ENGIN##
+    10 deny 172.16.30.0 0.0.0.255 (2 match(es))
+    20 permit any
+
+
+
+R3#show access-lists 
+Standard IP access list ##MGMT_ONLY##
+    10 permit 172.16.10.0 0.0.0.255
+    20 deny any
