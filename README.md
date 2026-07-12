@@ -23,8 +23,8 @@ This repository contains hands-on networking labs of mine for studying **CCNA**.
 | OSPF Multi-Area                   | Advanced OSPF                               | Completed   |
 | EtherChannel                      | Link Aggregation (LACP)                     | Completed   |
 | ACLs (Standard)                   | Traffic Filtering & Control                 | Completed   |
-| ACLs (Extended)                   | Traffic Filtering & Control                 | In Progress |
-| NAT (Static & PAT)                | Network Address Translation                 | Planned     |
+| ACLs (Extended)                   | Traffic Filtering & Control                 | Completed   |
+| NAT (Static & PAT)                | Network Address Translation                 | In Progress |
 | DHCP & NTP                        | Server Configuration                        | Planned     |
 
 
