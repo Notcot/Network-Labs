@@ -1,0 +1,33 @@
+Router>en
+Router#conf t
+Router(config)#host R2
+R2(config)#
+R2(config)#int g0/1
+R2(config-if)#ip addr 172.16.12.1 255.255.255.252
+R2(config-if)#no shut
+R2(config-if)#int g0/2
+R2(config-if)#ip addr 172.16.23.1 255.255.255.252
+R2(config-if)#no shut
+R2(config-if)#int g0/0
+R2(config-if)#ip addr 172.16.20.254 255.255.255.0
+R2(config-if)#no shut
+R2(config-if)#int l0
+R2(config-if)#ip addr 2.2.2.2 255.255.255.255
+R2(config-if)#
+R2(config-if)#router ospf 1
+R2(config-router)#router-id 2.2.2.2
+R2(config-router)#net 172.16.0.0 255.255.0.0 area 0
+R2(config-router)#passive-interface g0/0
+R2(config-router)#ex
+R2(config)#
+R2(config)#ip access-list extended 100
+R2(config-ext-nacl)#deny ip 172.16.20.0 0.0.0.255 172.16.10.0 0.0.0.255 
+R2(config-ext-nacl)#permit tcp 172.16.20.0 0.0.0.0 any eq 80
+R2(config-ext-nacl)#permit tcp 172.16.20.0 0.0.0.0 any eq 443
+R2(config-ext-nacl)#permit udp 172.16.20.0 0.0.0.0 any eq 443
+R2(config-ext-nacl)#permit udp 172.16.20.0 0.0.0.0 any eq 80
+R2(config-ext-nacl)#permit ip any any
+R2(config-ext-nacl)#ex
+R2(config)#
+R2(config)#int g0/0
+R2(config-if)#ip access-group 100

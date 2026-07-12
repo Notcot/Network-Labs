@@ -1,0 +1,7 @@
+Extended IP access list 100
+    10 deny ip 172.16.20.0 0.0.0.255 172.16.10.0 0.0.0.255
+    20 permit tcp host 172.16.20.0 any eq www
+    30 permit tcp host 172.16.20.0 any eq 443
+    40 permit udp host 172.16.20.0 any eq 443
+    50 permit udp host 172.16.20.0 any eq www
+    60 permit ip any any

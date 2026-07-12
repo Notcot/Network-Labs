@@ -1,0 +1,4 @@
+Extended IP access list 100
+    10 deny icmp 172.16.30.0 0.0.0.255 172.16.20.0 0.0.0.255
+    20 permit tcp 172.16.30.0 0.0.0.255 172.16.20.0 0.0.0.255 eq 445
+    30 permit ip any any
