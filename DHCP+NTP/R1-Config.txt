@@ -1,0 +1,26 @@
+Router>en
+Router#conf t
+Router(config)#host R1
+R1(config)#
+R1(config)#int g0/0
+R1(config-if)#ip addr 172.16.50.254 255.255.255.0
+R1(config-if)#no shut
+R1(config-if)#ex
+R1(config)#ip dhcp excluded-address 172.16.50.254
+R1(config)#ip dhcp excluded-address 172.16.50.1 172.16.50.10
+R1(config)#
+R1(config)#
+R1(config)#ip dhcp pool POOL1
+R1(dhcp-config)#net 172.16.50.0 255.255.255.0
+R1(dhcp-config)#domain-name apex.local
+R1(dhcp-config)#dns-server 8.8.8.8
+R1(dhcp-config)#default-router 172.16.50.254
+R1(dhcp-config)#ex
+R1(config)#
+R1(config)#ntp master
+R1(config)#ntp server 216.239.35.0
+R1(config)#clock timezone utc 8
+R1(config)#
+R1(config)#ex
+R1#clock set 13:01:00 16 july 2026
+R1#wr

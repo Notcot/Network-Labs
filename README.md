@@ -25,14 +25,13 @@ This repository contains hands-on networking labs of mine for studying **CCNA**.
 | ACLs (Standard)                   | Traffic Filtering & Control                 | Completed   |
 | ACLs (Extended)                   | Traffic Filtering & Control                 | Completed   |
 | NAT (Static & PAT)                | Network Address Translation                 | In Progress |
-| DHCP & NTP                        | Server Configuration                        | Planned     |
+| DHCP & NTP                        | Server Configuration                        | Completed   |
 
 
 
 ## 🛠️ Tools Used
 - Cisco Packet Tracer
 - Cisco IOS CLI
-- GNS3 (planned)
 
 ## 🎯 Learning Objectives
 - Master IP addressing and subnetting
