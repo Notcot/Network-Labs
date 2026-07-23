@@ -24,7 +24,7 @@ This repository contains hands-on networking labs of mine for studying **CCNA**.
 | EtherChannel                      | Link Aggregation (LACP)                     | Completed   |
 | ACLs (Standard)                   | Traffic Filtering & Control                 | Completed   |
 | ACLs (Extended)                   | Traffic Filtering & Control                 | Completed   |
-| NAT (Static & PAT)                | Network Address Translation                 | In Progress |
+| NAT (Static & PAT)                | Network Address Translation                 | Completed   |
 | DHCP & NTP                        | Server Configuration                        | Completed   |
 
 
